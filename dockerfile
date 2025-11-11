@@ -7,8 +7,6 @@ WORKDIR /main
 # 3. Copy local files to container
 COPY . /main
 
-# 4. Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
 
 
 # 6. Command to run the app
