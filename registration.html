@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html>
-<head><title>Register</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>registration</title>
+</head>
 <body>
-<form id="form">
-  <input placeholder="Full Name" required><br>
-  <input type="email" placeholder="Email" required><br>
-  <input type="password" placeholder="Password" required><br>
-  <button>Register</button>
-</form>
-<p id="msg" style="display:none">Registration Successful!</p>
+    <form id="form">
+      <input type="text" placeholder="name" required><br>
+      <input type="email" placeholder="email" required><br>
+      <input type="password" placeholder="password" required><br>
+      <button>submit</button><br>
+    </form>
+    <p id="msg" style="display:none">registration successfull</p>
+    <script>
+      form.onsubmit=e=>{
+        e.preventDefault();
+        msg.style.display='block';
+        form.reset();
+      }
+    </script> 
 
-<script>
-form.onsubmit = e => {
-  e.preventDefault();
-  msg.style.display = 'block';
-  form.reset();
-};
-</script>
+    
 </body>
 </html>
